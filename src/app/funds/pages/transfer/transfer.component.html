@@ -1,1 +1,10 @@
-<p>transfer works!</p>
+<form [formGroup]="userForm" (ngSubmit)="submitForm()" novalidate autocomplete="off">
+  <div class="container">
+    <div class="transfer-container">
+      <div>
+        Address: {{ user.address }} <br/>
+        Balance: {{ user.balance }} Eth
+      </div>
+    </div>
+  </div>
+</form>
